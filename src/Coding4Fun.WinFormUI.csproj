@@ -1,0 +1,93 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <Import Project="..\common.props" />
+  <PropertyGroup>
+    <Description>Coding4Fun.WinFormUI</Description>
+    <AssemblyName>Coding4Fun.WinFormUI</AssemblyName>
+    <Title>$(AssemblyName)</Title>
+    <UseWindowsForms>true</UseWindowsForms>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ASPX.xshd" />
+    <EmbeddedResource Include="Resources\BAT-Mode.xshd" />
+    <EmbeddedResource Include="Resources\Boo.xshd" />
+    <EmbeddedResource Include="Resources\Coco-Mode.xshd" />
+    <EmbeddedResource Include="Resources\CPP-Mode.xshd" />
+    <EmbeddedResource Include="Resources\CSharp-Mode.xshd" />
+    <EmbeddedResource Include="Resources\HTML-Mode.xshd" />
+    <EmbeddedResource Include="Resources\ICSharpCode.TextEditor.snk" />
+    <EmbeddedResource Include="Resources\Java-Mode.xshd" />
+    <EmbeddedResource Include="Resources\JavaScript-Mode.xshd" />
+    <EmbeddedResource Include="Resources\Mode.xsd" />
+    <EmbeddedResource Include="Resources\Patch-Mode.xshd" />
+    <EmbeddedResource Include="Resources\PHP-Mode.xshd" />
+    <EmbeddedResource Include="Resources\Python-Mode.xshd" />
+    <EmbeddedResource Include="Resources\RightArrow.cur" />
+    <EmbeddedResource Include="Resources\SyntaxModes.xml" />
+    <EmbeddedResource Include="Resources\Tex-Mode.xshd" />
+    <EmbeddedResource Include="Resources\TextEditorControl.bmp" />
+    <EmbeddedResource Include="Resources\VBNET-Mode.xshd" />
+    <EmbeddedResource Include="Resources\XML-Mode.xshd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Docking\Strings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ThemeVS2012\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ThemeVS2012\Strings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ThemeVS2013\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ThemeVS2015\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Docking\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThemeVS2012\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThemeVS2012\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThemeVS2013\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ThemeVS2015\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
