@@ -1,2 +1,2 @@
 # Coding4Fun.WinFormUI
-support .Net Core 3.1
+supported .Net Core 3.1
